@@ -23,3 +23,33 @@ Il inclut un backend structuré avec Controllers, Entities, et une interface ave
 
 ## Structure du projet
 
+covid_19/
+├─ config/ # Configuration routes, services
+├─ src/ # Controllers, Entities, Services
+├─ templates/ # Fichiers Twig
+├─ public/ # Point d’entrée index.php
+├─ var/ # Cache, logs
+├─ vendor/ # Packages Composer
+└─ .env # Variables d’environnement
+
+
+## Installation
+
+### Prérequis
+- PHP >= 8
+- Composer
+- MySQL
+- Symfony CLI (optionnel)
+
+### Étapes
+```bash
+git clone https://github.com/Ayaazouzi/covid_19.git
+cd covid_19
+composer install
+php bin/console doctrine:database:create
+php bin/console doctrine:migrations:migrate
+symfony server:start
+Ouvrir dans le navigateur : http://localhost:8000
+
+Auteur
+Aya Azouzi
