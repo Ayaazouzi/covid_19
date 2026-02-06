@@ -1,60 +1,25 @@
-Covid_19 Project
+# Covid_19 (Symfony)
 
-Projet PHP / Docker pour la gestion ou le suivi des données COVID‑19
+Application web Symfony pour gérer et visualiser des données COVID-19.
 
-Description
+## Description
 
-Ce projet est une application PHP qui permettait de gérer ou de visualiser des données liées au COVID‑19.
-Bien que les détails exacts de son fonctionnement aient été oubliés, ce projet montre l’utilisation de bonnes pratiques PHP, Docker et PHPUnit pour le développement web.
+Ce projet est développé avec Symfony et permet la gestion et la visualisation des données liées au COVID-19.  
+Il inclut un backend structuré avec Controllers, Entities, et une interface avec Twig pour afficher les données.
 
-Fonctionnalités (génériques)
+## Fonctionnalités
 
-Gestion des données (CRUD)
+- CRUD des données COVID-19 (ajouter, modifier, supprimer)  
+- Visualisation des statistiques  
+- API backend pour récupérer les données  
+- Tests unitaires avec PHPUnit
 
-Configuration via fichiers .env
+## Technologies
 
-Support Docker pour exécution isolée
+- PHP / Symfony  
+- MySQL  
+- Twig pour le frontend  
+- PHPUnit pour les tests
 
-Tests unitaires avec PHPUnit
+## Structure du projet
 
-Installation
-Avec Docker
-
-Cloner le projet :
-
-git clone https://github.com/Ayaazouzi/covid_19.git
-cd covid_19
-
-
-Lancer Docker Compose :
-
-docker-compose up -d
-
-
-Accéder à l’application depuis le navigateur :
-
-http://localhost:8000
-
-Avec PHP / Serveur local
-
-Copier le projet dans htdocs (XAMPP/WAMP)
-
-Configurer la base de données dans .env
-
-Lancer Apache et MySQL
-
-Ouvrir le fichier principal dans le navigateur
-
-Technologies utilisées
-
-PHP
-
-Docker
-
-MySQL / Base de données
-
-PHPUnit pour les tests
-
-Auteur
-
-Aya Azouzi
